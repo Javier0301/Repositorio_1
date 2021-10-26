@@ -1,10 +1,12 @@
 Algoritmo Notas_medias
-	definir sumanota, b, nota Como Entero;
+	definir sumanota, b, nota, c, asig, j Como Entero;
 	definir media, sumatorio, i, a, medianota como real;
 	definir nombre Como Caracter;
 	Escribir Sin Saltar "intrduzca el número de alumnos: ";
 	leer a;
-	
+	Escribir Sin Saltar "intrduzca el número de asignaturas: ";
+	leer c;
+	Dimension asig[c];
 	Dimension nombre[a];
 	Dimension nota[3];
 	Dimension medianota[a];
@@ -15,8 +17,9 @@ Algoritmo Notas_medias
 		leer nombre[i];
 	FinPara
 	
+	
 	Para i<-0 Hasta a-1  Hacer
-		Para b<-0 Hasta 2  Hacer
+		Para b<-0 Hasta c  Hacer
 			Escribir Sin Saltar"introduzca la nota ", b+1, " de ", nombre[i], ":";
 			leer nota[b];
 			sumanota<- sumanota+nota[b];
@@ -36,6 +39,4 @@ Algoritmo Notas_medias
 			Escribir "la nota de ", nombre[i], " es mayor que la media";
 		FinSi
 	FinPara
-	
-	
 FinAlgoritmo
