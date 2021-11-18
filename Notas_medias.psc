@@ -39,4 +39,6 @@ Algoritmo Notas_medias
 			Escribir "la nota de ", nombre[i], " es mayor que la media";
 		FinSi
 	FinPara
+	
+	Escribir "prueba para git";
 FinAlgoritmo
