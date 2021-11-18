@@ -40,5 +40,5 @@ Algoritmo Notas_medias
 		FinSi
 	FinPara
 	
-	Escribir "prueba para git";
+	
 FinAlgoritmo
